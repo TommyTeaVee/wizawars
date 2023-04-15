@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wizard Of Wor</title>
+	<style type="text/css">
+	html,body,div,span,h1,p,a,em,img,strong,canvas{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}.hide{display:none}@font-face{font-family:'WizardOfWor';src:url('fonts/wizardofwor-webfont.eot');src:url('fonts/wizardofwor-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/wizardofwor-webfont.woff') format('woff'),url('fonts/wizardofwor-webfont.ttf') format('truetype');font-weight:normal;font-style:normal}@font-face{font-family:'C64ProRegular';src:url('fonts/c64_pro_v1.0-style-webfont-webfont.eot');src:url('fonts/c64_pro_v1.0-style-webfont-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/c64_pro_v1.0-style-webfont-webfont.woff') format('woff'),url('fonts/c64_pro_v1.0-style-webfont-webfont.ttf') format('truetype');font-weight:normal;font-style:normal}html{height:100%;overflow:hidden}body{position:relative;height:100%;font-family:'Arial';font-size:10px;color:white;background:black}#screen{position:fixed;left:0;top:0;width:960px;height:600px;z-index:100;image-rendering:crisp-edges;image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-crisp-edges;-webkit-interpolation-mode:nearest-neighbor}#message{position:absolute;z-index:200;left:0;top:50%;margin-top:-15px;width:100%;height:30px;font-family:'WizardOfWor';font-size:36px;letter-spacing:2px;text-align:center;color:#a397ff}#message.error{color:#ef839f}#touchControlMove,#touchControlFire{position:absolute;width:25%;height:50%;border:1px solid #999;background:#555;opacity:.5;z-index:200}#touchControlFire{bottom:0;left:0}#touchControlMove{bottom:0;right:0;text-align:center;font-family:Arial}#touchControlUp{height:25%;border-bottom:1px solid #999}#touchControlLeft{float:left;width:50%;height:50%;border-right:1px solid #999;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}#touchControlRight{float:right;width:50%;height:50%}#touchControlDown{clear:both;height:25%;border-top:1px solid #999}#social{position:fixed;top:2px;left:2px;width:120px;height:70px;overflow:visible;z-index:300}
+</style>
+</head>
+<body>
+<div id="message">LOADING...</div>
+<div id="gameScreen">
+<canvas id="screen" width="960" height="600" class="hide" moz-opaque></canvas>
+<div id="touchControlFire" class="hide"></div>
+<div id="touchControlMove" class="hide">
+	<div id="touchControlUp"></div>
+	<div id="touchControlLeft"></div>
+	<div id="touchControlRight"></div>
+	<div id="touchControlDown"></div>
+</div>
+</div>
+<div id="social" class="hide"></div>
+<span style="font-family: C64ProRegular"></span>
+<script src="js/wiza.js"></script>
+</body>
+</html>
